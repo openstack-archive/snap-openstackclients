@@ -1,0 +1,163 @@
+name: openstackclients
+version: newton
+summary: OpenStack Client tools
+description: |
+  OpenStackClient (aka OSC) is a command-line client for OpenStack
+  that brings the command set for Compute, Identity, Image, Object
+  Store and Block Storage APIs together in a single shell with a
+  uniform command structure.
+  .
+  The primary goal is to provide a unified shell command structure
+  and a common language to describe operations in OpenStack.
+  .
+  This snap provides the openstack command-line client and other
+  project specific command-line clients.
+confinement: classic
+grade: devel
+
+apps:
+  openstack:
+    command: bin/openstack
+    aliases:
+      - openstack
+  glance:
+    command: bin/glance
+    aliases:
+      - glance
+  neutron:
+    command: bin/neutron
+    aliases:
+      - neutron
+  nova:
+    command: bin/nova
+    aliases:
+      - nova
+  cinder:
+    command: bin/cinder
+    aliases:
+      - cinder
+  aodh:
+     command: bin/aodh
+     aliases:
+       - aodh
+  barbican:
+     command: bin/barbican
+     aliases:
+       - barbican
+  ceilometer:
+     command: bin/ceilometer
+     aliases:
+       - ceilometer
+  cloudkitty:
+     command: bin/cloudkitty
+     aliases:
+       - cloudkitty
+  designate:
+     command: bin/designate
+     aliases:
+       - designate
+  freezer:
+     command: bin/freezer
+     aliases:
+       - freezer
+  glance:
+     command: bin/glance
+     aliases:
+       - glance
+  heat:
+     command: bin/heat
+     aliases:
+       - heat
+  ironic:
+     command: bin/ironic
+     aliases:
+       - ironic
+  magnum:
+     command: bin/magnum
+     aliases:
+       - magnum
+  manila:
+     command: bin/manila
+     aliases:
+       - manila
+  mistral:
+     command: bin/mistral
+     aliases:
+       - mistral
+  monasca:
+     command: bin/monasca
+     aliases:
+       - monasca
+  murano:
+     command: bin/murano
+     aliases:
+       - murano
+  sahara:
+     command: bin/sahara
+     aliases:
+       - sahara
+  senlin:
+     command: bin/senlin
+     aliases:
+       - senlin
+  swift:
+     command: bin/swift
+     aliases:
+       - swift
+  tacker:
+     command: bin/tacker
+     aliases:
+       - tacker
+  trove:
+     command: bin/trove
+     aliases:
+       - trove
+  vitrage:
+     command: bin/vitrage
+     aliases:
+       - vitrage
+  watcher:
+     command: bin/watcher
+     aliases:
+       - watcher
+
+parts:
+  openstackclients:
+    plugin: python
+    python-version: python3
+    python-packages:
+      - aodhclient
+      - python-barbicanclient
+      - python-ceilometerclient
+      - python-cloudkittyclient
+      - python-congressclient
+      - python-designateclient
+      - python-freezerclient
+      - python-glanceclient
+      - python-heatclient
+      - python-ironicclient
+      - python-keystoneclient
+      - python-magnumclient
+      - python-manilaclient
+      - python-mistralclient
+      - python-monascaclient
+      - python-muranoclient
+      - python-saharaclient
+      - python-searchlightclient
+      - python-senlinclient
+      - python-swiftclient
+      - python-tackerclient
+      - python-troveclient
+      - python-vitrageclient
+      - python-watcherclient
+      - python-zaqarclient
+      - python-neutronclient
+      - python-openstackclient
+    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/newton/upper-constraints.txt
+    build-packages:
+      - libffi-dev
+      - libssl-dev
+      - libxml2-dev
+      - libxslt1-dev
+      - pkg-config
+      - gcc
