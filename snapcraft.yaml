@@ -124,7 +124,7 @@ apps:
 parts:
   openstackclients:
     plugin: python
-    python-version: python3
+    python-version: python2
     python-packages:
       - aodhclient
       - python-barbicanclient
