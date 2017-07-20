@@ -24,6 +24,10 @@ apps:
     command: bin/glance
     aliases:
       - glance
+  gnocchi:
+    command: bin/gnocchi
+    aliases:
+      - gnocchi
   neutron:
     command: bin/neutron
     aliases:
@@ -149,6 +153,7 @@ parts:
       - python-zaqarclient
       - python-neutronclient
       - python-openstackclient
+      - gnocchiclient
     constraints: https://raw.githubusercontent.com/openstack/requirements/stable/ocata/upper-constraints.txt
     build-packages:
       - libffi-dev
