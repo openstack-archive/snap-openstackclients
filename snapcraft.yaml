@@ -20,6 +20,8 @@ apps:
     command: bin/openstack
   glance:
     command: bin/glance
+  gnocchi:
+    command: bin/gnocchi
   neutron:
     command: bin/neutron
   nova:
@@ -99,6 +101,7 @@ parts:
       - python-zaqarclient
       - python-neutronclient
       - python-openstackclient
+      - gnocchiclient
     constraints: https://raw.githubusercontent.com/openstack/requirements/stable/pike/upper-constraints.txt
     build-packages:
       - libffi-dev
