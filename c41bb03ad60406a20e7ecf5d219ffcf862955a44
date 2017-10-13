@@ -1,0 +1,8 @@
+Code-Review+2: Corey Bryant <corey.bryant@canonical.com>
+Workflow+1: Corey Bryant <corey.bryant@canonical.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 13 Oct 2017 18:17:36 +0000
+Reviewed-on: https://review.openstack.org/511874
+Project: openstack/snap-openstackclients
+Branch: refs/heads/master
