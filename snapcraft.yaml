@@ -1,5 +1,5 @@
 name: openstackclients
-version: pike
+version: queens
 summary: OpenStack Client tools
 description: |
   OpenStackClient (aka OSC) is a command-line client for OpenStack
@@ -56,8 +56,6 @@ apps:
      command: bin/monasca
   murano:
      command: bin/murano
-  senlin:
-     command: bin/senlin
   swift:
      command: bin/swift
   tacker:
@@ -102,7 +100,7 @@ parts:
       - python-neutronclient
       - python-openstackclient
       - gnocchiclient
-    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/pike/upper-constraints.txt
+    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/queens/upper-constraints.txt
     build-packages:
       - libffi-dev
       - libssl-dev
