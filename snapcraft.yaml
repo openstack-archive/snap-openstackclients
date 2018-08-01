@@ -13,7 +13,7 @@ description: |
   This snap provides the openstack command-line client and other
   project specific command-line clients.
 confinement: classic
-grade: devel
+grade: stable
 
 apps:
   openstack:
