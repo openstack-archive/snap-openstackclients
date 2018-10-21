@@ -1,5 +1,5 @@
 name: openstackclients
-version: queens
+version: rocky
 summary: OpenStack Client tools
 description: |
   OpenStackClient (aka OSC) is a command-line client for OpenStack
@@ -29,43 +29,43 @@ apps:
   cinder:
     command: bin/cinder
   aodh:
-     command: bin/aodh
+    command: bin/aodh
   barbican:
-     command: bin/barbican
+    command: bin/barbican
   ceilometer:
-     command: bin/ceilometer
+    command: bin/ceilometer
   cloudkitty:
-     command: bin/cloudkitty
+    command: bin/cloudkitty
   designate:
-     command: bin/designate
+    command: bin/designate
   freezer:
-     command: bin/freezer
+    command: bin/freezer
   glance:
-     command: bin/glance
+    command: bin/glance
   heat:
-     command: bin/heat
+    command: bin/heat
   ironic:
-     command: bin/ironic
+    command: bin/ironic
   magnum:
-     command: bin/magnum
+    command: bin/magnum
   manila:
-     command: bin/manila
+    command: bin/manila
   mistral:
-     command: bin/mistral
+    command: bin/mistral
   monasca:
-     command: bin/monasca
+    command: bin/monasca
   murano:
-     command: bin/murano
+    command: bin/murano
   swift:
-     command: bin/swift
+    command: bin/swift
   tacker:
-     command: bin/tacker
+    command: bin/tacker
   trove:
-     command: bin/trove
+    command: bin/trove
   vitrage:
-     command: bin/vitrage
+    command: bin/vitrage
   watcher:
-     command: bin/watcher
+    command: bin/watcher
 
 parts:
   openstackclients:
@@ -100,7 +100,7 @@ parts:
       - python-neutronclient
       - python-openstackclient
       - gnocchiclient
-    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/queens/upper-constraints.txt
+    constraints: https://raw.githubusercontent.com/openstack/requirements/stable/rocky/upper-constraints.txt
     build-packages:
       - libffi-dev
       - libssl-dev
