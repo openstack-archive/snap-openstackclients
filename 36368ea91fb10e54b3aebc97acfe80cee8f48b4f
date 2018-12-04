@@ -1,0 +1,8 @@
+Code-Review+2: James Page <james.page@canonical.com>
+Workflow+1: James Page <james.page@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 04 Dec 2018 11:50:28 +0000
+Reviewed-on: https://review.openstack.org/622195
+Project: openstack/snap-openstackclients
+Branch: refs/heads/master
