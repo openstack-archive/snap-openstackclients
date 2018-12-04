@@ -100,6 +100,7 @@ parts:
       - python-neutronclient
       - python-openstackclient
       - gnocchiclient
+      - python-octaviaclient
     constraints: https://raw.githubusercontent.com/openstack/requirements/stable/rocky/upper-constraints.txt
     build-packages:
       - libffi-dev
