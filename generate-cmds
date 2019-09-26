@@ -1,9 +1,0 @@
-#!/bin/bash
-
-for i in aodh barbican ceilometer cloudkitty congress designate freezer glance heat ironic magnum manila mistral monasca murano sahara searchlight senlin swift tacker trove vitrage watch zaqar; do
-    echo "  $i:
-     command: bin/$i
-     aliases:
-       - $i"
-done
-
